@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="welcome-screen">
+        <h1>Welcome to Quiz Quest!</h1>
+        <p>Test your knowledge about space with our fun quiz. Click the button below to start.</p>
+        <button id="start-quiz">Start Quiz</button>
+    </div>
+
+    <div class="container" id="quiz-screen" style="display: none;">
+        <h1>Quiz Quest!</h1>
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+        <div id="score">Score: 0</div>
+    </div>
+
+    <div class="container" id="result-screen" style="display: none;">
+        <h1>Quiz Completed!</h1>
+        <div id="final-score"></div>
+        <button id="retry-quiz">Retry Quiz</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
